@@ -40,7 +40,7 @@ export default function CollectionSpotlight() {
                                 <div key={index} className='p-3 pb-1 dark:bg-[#3b3e46] bg-white w-fit text-center spotlight-custom-shadow '>
                                     <Image
                                         style={{ height: "400px", width: "100%", objectFit: "cover" }}
-                                        src={data.img} />
+                                        src={data.img} alt={data.title} />
                                     <div className='p-2'>
                                         <div className='relative '>
                                             <div className='border-[0.1px] border-dashed mt-4 border-[#818A97] border-spacing-8'></div>

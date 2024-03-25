@@ -43,7 +43,7 @@ export default function Sports() {
                         <div key={index} className="lg:max-w-[237px] dark:bg-[#3B3E47] p-[10px] mt-[20px] lg:mt-[30px]  custom-shadow">
                             <Image
                                 style={{ height: "385px", width: "385px", objectFit: "cover" }}
-                                src={data.img} />
+                                src={data.img} alt={data.title} />
                             <h3 className="text-[17px] font-medium py-3 md:py-4 dark:text-white text-black">{data.title}</h3>
                             <div className="grid grid-cols-2 dark:bg-[#292B32] bg-[#ededede2] p-3">
                                 <div>
