@@ -16,18 +16,23 @@
   }
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  background: #292b32
+} */
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+.custom-underline{
+    text-underline-offset: 12px;
+}
+
+.custom-shadow{
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.spotlight-custom-shadow{
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
