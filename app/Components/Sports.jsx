@@ -39,8 +39,8 @@ export default function Sports() {
             <h3 className="underline decoration-[2px] mb-1 md:mb-3 lg:mb-0 underline-offset-[12px] decoration-[#738FFF] text-2xl font-bold dark:text-white text-black">Sports</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5  md:gap-[14px]">
                 {
-                    sportsData.map(data => (
-                        <div className="lg:max-w-[237px] dark:bg-[#3B3E47] p-[10px] mt-[20px] lg:mt-[30px]  custom-shadow">
+                    sportsData.map((data, index) => (
+                        <div key={index} className="lg:max-w-[237px] dark:bg-[#3B3E47] p-[10px] mt-[20px] lg:mt-[30px]  custom-shadow">
                             <Image
                                 style={{ height: "385px", width: "385px", objectFit: "cover" }}
                                 src={data.img} />

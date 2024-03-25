@@ -35,9 +35,9 @@ export default function CollectionSpotlight() {
                 <p className='text-center mt-3 lg:mt-6'>Discover extraordinary moments with our Spotlight Collection metatickets—exclusive access to premium events for an unforgettable <br /> experience. Grab yours today!</p>
                 <div className='max-w-[850px] mx-auto mt-[30px] lg:mt-[50px]'>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[46px] justify-items-center'>
-                        {spotlightData.map(data => {
+                        {spotlightData.map((data, index) => {
                             return (
-                                <div className='p-3 pb-1 dark:bg-[#3b3e46] bg-white w-fit text-center spotlight-custom-shadow '>
+                                <div key={index} className='p-3 pb-1 dark:bg-[#3b3e46] bg-white w-fit text-center spotlight-custom-shadow '>
                                     <Image
                                         style={{ height: "400px", width: "100%", objectFit: "cover" }}
                                         src={data.img} />
